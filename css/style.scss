@@ -157,7 +157,7 @@
 }
 
 /*
-            Newsletter
+            Newslatter
 */
 
 .newsletter{
@@ -248,6 +248,155 @@
             }
             h3{
                 color: red;
+            }
+        }
+    }
+}
+
+/*
+        Exemplo media screen:
+*/
+
+/*
+        Small devices - Smartphones
+*/
+
+@media screen and (min-width: 480px){
+    .cabecalho{
+        h1{
+            width: 214px;
+            background: url('../img/logo.png') center center/214px no-repeat;
+        }
+    }
+}
+
+/*
+        Small devices - Tablets
+*/
+
+@media screen and (min-width: 768px){
+    .servicos{
+        .servico{
+            width: 49%;
+            float: left;
+            margin-right: 2%;
+            &:nth-child(2){
+                margin-right: 0;
+            }
+        }
+    }
+    .newsletter{
+        h2{
+            font-size: 2em;
+        }
+        h3{
+            font-size: 1.5em;
+        }
+        input{
+            width: 70%;
+            padding: 2%;
+            float: left;
+            margin-right: 1%;
+        }
+        button{
+            width: 29%;
+            float: right;
+            margin-top: 0;
+            padding: 2.1%;
+        }
+    }
+}
+
+/*
+        Medium devices - Tablets e desktops
+*/
+
+@media screen and (min-width: 960px){
+    .banner{
+        .title{
+            width: 70%;
+            float: left;
+            margin-right: 1%;
+            text-align: left;
+            h2{
+                font-size: 3em;
+            }
+            h3{
+                font-size: 1.5em;
+                color: #fff;
+            }
+        }
+        .buttons{
+            width: 29%;
+            float: right;
+            .btn-sobre{
+                margin-top: 4%;
+            }
+        }
+    }
+    .servicos{
+        .servico{
+            width: 32%;
+            float: left;
+            margin-right: 2%;
+            &:nth-child(2){
+                margin-right: 2%;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+    .newsletter{
+        input{
+            width: 60%;
+            float: none;
+        }
+        button{
+            width: 20%;
+            float: none;
+        }
+    }
+}
+
+/*
+        Large devices - Wide screens
+*/
+
+@media screen and (min-width: 1020px){
+    .cabecalho{
+        .btn-menu{
+            display: none;
+        }
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        display: block !important;
+        float: right;
+        background-color: #f5f5f5;
+        position: static;
+        .btn-close{
+            display: none;
+        }
+        ul{
+            width: auto;
+            float: left;
+            text-align: center;
+            li{
+                padding: 0;
+                float: left;
+                a{
+                    font-size: 1em;
+                    color: #130400;
+                    font-size: 1em;
+                    padding: 15px;
+                    &:hover{
+                        border: none;
+                        color: #da6709;
+                    }
+                }
             }
         }
     }
